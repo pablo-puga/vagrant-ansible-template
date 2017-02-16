@@ -1,0 +1,9 @@
+---
+server:
+  install: '1'
+  packages: [vim]
+  timezone: TIME_ZONE
+  locale: LOCALE
+vagrant_local:
+  install: '1'
+  vm: { base_box: DEBIAN_BOX, hostname: HOST_NAME, ip: PRIVATE_IP, memory: 'MEMORY', sharedfolder: shared/, useVagrantCloud: '1', syncType: '0' }
